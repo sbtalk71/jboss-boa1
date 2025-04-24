@@ -1,5 +1,7 @@
 # jboss-boa1
-
+``sh
+https://cdn.azul.com/zulu/bin/zulu11.80.21-ca-jdk11.0.27-win_x64.zip
+```
 ```xml
 <access-control provider="rbac">
             <role-mapping>
