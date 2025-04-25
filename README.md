@@ -40,3 +40,8 @@ https://cdn.azul.com/zulu/bin/zulu11.80.21-ca-jdk11.0.27-win_x64.zip
             </role-mapping>
         </access-control>
 ```
+```sh
+
+https://www.apachelounge.com/download/VS17/binaries/httpd-2.4.63-250207-win64-VS17.zip
+
+```
