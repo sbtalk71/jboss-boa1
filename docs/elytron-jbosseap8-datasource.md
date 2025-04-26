@@ -8,11 +8,12 @@ password : root
 1. **Configure credential store either with `elytron-tool` or `jboss-cli script`**
 	- elytron-tool
 	```sh
-	elytron-tool.bat credential-store --create --location=myCredStore.cs --password=MyStorePassword --add root --secret=root
+	JBOSS_HOME/bin/elytron-tool.sh credential-store --create --location=./standalone/configuration/myCredStore.cs --password=MyStorePassword --add root --secret=root
 	```
 	- cli script
 	```sh
-	/subsystem=elytron/credential-store=myCredStore:add(path=myCredStore.cs,relative-to=jboss.server.config.dir,credential-reference={clear-text=MyStorePassword},create=true)
+ 	JBOSS_HOME/bin/jboss-cli.sh
+	/subsystem=elytron/credential-store=myCredStore:add(path=myCredStore.cs,relative-to=jboss.server.config.dir,credential-reference={clear-text=MyStorePassword})
 	```
 	- The above will add the given xml fragment
 	```xml
